@@ -101,6 +101,16 @@
         <p>· Vasario 16-osios jaunimo eisena</p>
     </div>
     <div id="hidKult" style="display: block;"><i>...paslėpta...</i></div>
+    <p class="subj">Vartotojiškumas</p><button id="btnVart" ontouchstart onclick="vart()">rodyti</button>
+    <div id="vart">
+        <p style="margin-top: 0;">· Johanas Volfgangas Gėtė (Apšvietos epochos vokiečių poetas, dramaturgas) tragedija „Faustas“</p>
+        <p>· Mitas (senovės Graikija) apie Narcizą</p>
+        <p>· Mitas (senovės Graikija) apie Sizifą</p>
+        <p>· Jennette McCurdy (amerikiečių rašytoja) autobiografija „Džiaugiuosi, kad mirė mano mama“</p>
+        <p>· Juodasis penktadienis, Kalėdų prekės lapkričio mėn. (komercija)</p>
+        <p>· Labubu, Dubajaus šokoladas</p>
+    </div>
+    <div id="hidVart" style="display: block;"><i>...paslėpta...</i></div>
     <p class="subj">Šeimos santykiai (+ lyčių lygybė)</p><button id="btnSeim" ontouchstart onclick="seim()">rodyti</button>
     <div id="seim">
         <p style="margin-top: 0;">· Migelis de Servantesas (ispanų rašytojas) romanas „Don Kichotas“</p>
@@ -183,6 +193,18 @@
                 document.getElementById("hidKult").style.display = "block";
                 document.getElementById("kult").style.display = "none";
                 document.getElementById("btnKult").innerHTML = "rodyti";
+            }
+        }
+        function vart(){
+            if(document.getElementById("hidVart").style.display == "block"){
+                document.getElementById("hidVart").style.display = "none";
+                document.getElementById("vart").style.display = "block";
+                document.getElementById("btnVart").innerHTML = "slėpti";
+            }
+            else{
+                document.getElementById("hidVart").style.display = "block";
+                document.getElementById("vart").style.display = "none";
+                document.getElementById("btnVart").innerHTML = "rodyti";
             }
         }
         function seim(){
