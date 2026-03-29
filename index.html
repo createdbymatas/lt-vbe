@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LT VBE I dalis | Kultūriniai pavyzdžiai</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Arimo", sans-serif;
+        }
+        body{
+            padding: 15px;
+        }
+        .subj{
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+        button{
+            display: inline-block;
+            width: 50px;
+            height: 25px;
+            font-size: 15px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        button:active{
+            opacity: 0.2;
+        }
+        div{
+            border: 1px solid black;
+            border-radius: 15px;
+            padding: 10px;
+            display: none;
+        }
+        div p{
+            margin-top: 5px;
+        }
+    </style>
+    <h1>LT VBE I dalis | Kultūriniai pavyzdžiai</h1>
+    <br>
+    <p class="subj">Dirbtinis intelektas</p><button id="btnDi" ontouchstart onclick="di()">rodyti</button>
+    <div id="di">
+        <p style="margin-top: 0;">· Johanas Volfgangas Gėtė (Apšvietos epochos vokiečių poetas, dramaturgas) tragedija „Faustas“</p>
+        <p>· Dan Brown (amerikiečių rašytojas) romanas „Skaitmeninė tvirtovė“</p>
+        <p>· Mitas (senovės Graikija) apie Prometėją</p>
+        <p>· Biblinis pasakojimas apie Babelio bokštą</p>
+    </div>
+    <div id="hidDi" style="display: block;"><i>...paslėpta...</i></div>
+    <p class="subj">Socialiniai tinklai</p><button id="btnSoc" ontouchstart onclick="soc()">rodyti</button>
+    <div id="soc">
+        <p style="margin-top: 0;">· Johanas Volfgangas Gėtė (Apšvietos epochos vokiečių poetas, dramaturgas) tragedija „Faustas“</p>
+        <p>· Jennette McCurdy (amerikiečių rašytoja) autobiografija „Džiaugiuosi, kad mirė mano mama“</p>
+        <p>· Dan Brown (amerikiečių rašytojas) romanas „Skaitmeninė tvirtovė“</p>
+        <p>· Mitas (senovės Graikija) apie Narcizą</p>
+    </div>
+    <div id="hidSoc" style="display: block;"><i>...paslėpta...</i></div>
+    <p class="subj">Knygos</p><button id="btnKnyg" ontouchstart onclick="knyg()">rodyti</button>
+    <div id="knyg">
+        <p style="margin-top: 0;">· Dan Brown (amerikiečių rašytojas) romanas „Skaitmeninė tvirtovė“</p>
+        <p>· Jennette McCurdy (amerikiečių rašytoja) autobiografija „Džiaugiuosi, kad mirė mano mama“</p>
+        <p>· Migelis de Servantesas (ispanų rašytojas) romanas „Don Kichotas“</p>
+        <p>· Vilniaus knygų mugė</p>
+    </div>
+    <div id="hidKnyg" style="display: block;"><i>...paslėpta...</i></div>
+    <p class="subj">Kelionės</p><button id="btnKelion" ontouchstart onclick="kelion()">rodyti</button>
+    <div id="kelion">
+        <p style="margin-top: 0;">· Migelis de Servantesas (ispanų rašytojas) romanas „Don Kichotas“</p>
+        <p>· Johanas Volfgangas Gėtė (Apšvietos epochos vokiečių poetas, dramaturgas) tragedija „Faustas“</p>
+        <p>· Aurimas Valujavičius filmas „Irklais per Atlantą“</p>
+        <p>· Geografiniai atradimai (K. Kolumbas, V. da Gama)</p>
+        <p>· Dariaus ir Girėno skrydis per Atlantą (1933 m.)</p>
+    </div>
+    <div id="hidKelion" style="display: block;"><i>...paslėpta...</i></div>
+    <p class="subj">Ekologija / gamta</p><button id="btnGamt" ontouchstart onclick="gamt()">rodyti</button>
+    <div id="gamt">
+        <p style="margin-top: 0;">· Kristijonas Donelaitis (lietuvių literatūros klasikas, poetas) poema „Metai“</p>
+        <p>· Antanas Baranauskas (lietuvių poetas, vyskupas, kalbininkas) poema „Anykščių Šilelis“</p>
+        <p>· Dan Brown (amerikiečių rašytojas) romanas „Skaitmeninė tvirtovė“</p>
+        <p>· Akcija „Darom“</p>
+    </div>
+    <div id="hidGamt" style="display: block;"><i>...paslėpta...</i></div>
+    <p class="subj">Kultūra / tautosaka / patriotizmas</p><button id="btnKult" ontouchstart onclick="kult()">rodyti</button>
+    <div id="kult">
+        <p style="margin-top: 0;">· Kristijonas Donelaitis (lietuvių literatūros klasikas, poetas) poema „Metai“</p>
+        <p>· Rūta Šepetys (lietuvių-amerikiečių rašytoja) romanas „Tarp pilkų debesų“</p>
+        <p>· Marija Prymačenko (ukrainiečių menininkė) paroda Vytauto Kasiulio dailės muziejuje „Dovanoju jums saulėtą meną“</p>
+        <p>· Aurimas Valujavičius filmas „Irklais per Atlantą“</p>
+        <p>· Kultūrinė edukacija „Tėvynės DNR“</p>
+        <p>· Protestai „Sustingusi kultūra“, „Šalin rankas nuo laisvo žodžio“</p>
+        <p>· Vasario 16-osios jaunimo eisena</p>
+    </div>
+    <div id="hidKult" style="display: block;"><i>...paslėpta...</i></div>
+    <p class="subj">Šeimos santykiai (+ lyčių lygybė)</p><button id="btnSeim" ontouchstart onclick="seim()">rodyti</button>
+    <div id="seim">
+        <p style="margin-top: 0;">· Migelis de Servantesas (ispanų rašytojas) romanas „Don Kichotas“</p>
+        <p>· Henrikas Ibsenas (norvegų poetas, dramaturgas) drama „Lėlių namai“</p>
+        <p>· Jennette McCurdy (amerikiečių rašytoja) autobiografija „Džiaugiuosi, kad mirė mano mama“</p>
+        <p>· Rūta Šepetys (lietuvių-amerikiečių rašytoja) romanas „Tarp pilkų debesų</p>
+        <p>· Andželika Cholina (lietuvių choreografė) spektaklis „Jaunystė“</p>
+    </div>
+    <div id="hidSeim" style="display: block;"><i>...paslėpta...</i></div>
+
+
+    <script>
+        function di(){
+            if(document.getElementById("hidDi").style.display == "block"){
+                document.getElementById("hidDi").style.display = "none";
+                document.getElementById("di").style.display = "block";
+                document.getElementById("btnDi").innerHTML = "slėpti";
+            }
+            else{
+                document.getElementById("hidDi").style.display = "block";
+                document.getElementById("di").style.display = "none";
+                document.getElementById("btnDi").innerHTML = "rodyti";
+            }
+        }
+        function soc(){
+            if(document.getElementById("hidSoc").style.display == "block"){
+                document.getElementById("hidSoc").style.display = "none";
+                document.getElementById("soc").style.display = "block";
+                document.getElementById("btnSoc").innerHTML = "slėpti";
+            }
+            else{
+                document.getElementById("hidSoc").style.display = "block";
+                document.getElementById("soc").style.display = "none";
+                document.getElementById("btnSoc").innerHTML = "rodyti";
+            }
+        }
+        function knyg(){
+            if(document.getElementById("hidKnyg").style.display == "block"){
+                document.getElementById("hidKnyg").style.display = "none";
+                document.getElementById("knyg").style.display = "block";
+                document.getElementById("btnKnyg").innerHTML = "slėpti";
+            }
+            else{
+                document.getElementById("hidKnyg").style.display = "block";
+                document.getElementById("knyg").style.display = "none";
+                document.getElementById("btnKnyg").innerHTML = "rodyti";
+            }
+        }
+        function kelion(){
+            if(document.getElementById("hidKelion").style.display == "block"){
+                document.getElementById("hidKelion").style.display = "none";
+                document.getElementById("kelion").style.display = "block";
+                document.getElementById("btnKelion").innerHTML = "slėpti";
+            }
+            else{
+                document.getElementById("hidKelion").style.display = "block";
+                document.getElementById("kelion").style.display = "none";
+                document.getElementById("btnKelion").innerHTML = "rodyti";
+            }
+        }
+        function gamt(){
+            if(document.getElementById("hidGamt").style.display == "block"){
+                document.getElementById("hidGamt").style.display = "none";
+                document.getElementById("gamt").style.display = "block";
+                document.getElementById("btnGamt").innerHTML = "slėpti";
+            }
+            else{
+                document.getElementById("hidGamt").style.display = "block";
+                document.getElementById("gamt").style.display = "none";
+                document.getElementById("btnGamt").innerHTML = "rodyti";
+            }
+        }
+        function kult(){
+            if(document.getElementById("hidKult").style.display == "block"){
+                document.getElementById("hidKult").style.display = "none";
+                document.getElementById("kult").style.display = "block";
+                document.getElementById("btnKult").innerHTML = "slėpti";
+            }
+            else{
+                document.getElementById("hidKult").style.display = "block";
+                document.getElementById("kult").style.display = "none";
+                document.getElementById("btnKult").innerHTML = "rodyti";
+            }
+        }
+        function seim(){
+            if(document.getElementById("hidSeim").style.display == "block"){
+                document.getElementById("hidSeim").style.display = "none";
+                document.getElementById("seim").style.display = "block";
+                document.getElementById("btnSeim").innerHTML = "slėpti";
+            }
+            else{
+                document.getElementById("hidSeim").style.display = "block";
+                document.getElementById("seim").style.display = "none";
+                document.getElementById("btnSeim").innerHTML = "rodyti";
+            }
+        }
+    </script>
+</body>
+</html>
